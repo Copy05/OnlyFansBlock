@@ -1,3 +1,5 @@
+# FUCKING TWITTER API PRICES!!!!
+
 from TwitterAPI import TwitterAPI
 api = TwitterAPI(consumer_key='redacted', consumer_secret='redacted', access_token_key='redacted', access_token_secret='redacted')
 blockedUsers = list(set(user['screen_name'] for user in api.request('blocks/list', {'include_entities': 'false', 'skip_status':'true'})))
